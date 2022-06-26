@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Start</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/semantic.min.css" integrity="sha512-g/MzOGVPy3OQ4ej1U+qe4D/xhLwUn5l5xL0Fa7gdC258ZWVJQGwsbIR47SWMpRxSPjD0tfu/xkilTy+Lhrl3xg==" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.7/semantic.min.css" integrity="sha512-g/MzOGVPy3OQ4ej1U+qe4D/xhLwUn5l5xL0Fa7gdC258ZWVJQGwsbIR47SWMpRxSPjD0tfu/xkilTy+Lhrl3xg=="
+          crossorigin="anonymous"/>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <style>
         body {
@@ -12,28 +13,28 @@
             justify-content: center;
             align-items: center;
         }
+
+        #giant {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            font-size: 32em;
+            opacity: 0.2;
+        }
     </style>
 </head>
 <body>
 
-<div class="ui container">
-    <div class="ui grid container">
-        <div class="row">
-            <div class="center aligned column">
-                <h1 class="ui inverted center aligned icon huge header">
-                    <i class="home icon"></i>
-                </h1>
-            </div>
-        </div>
-    </div>
+<i id="giant" class="inverted home icon"></i>
 
+<div class="ui container">
     <div class="ui four column doubling grid container">
         <div class="column">
             <div class="ui fluid inverted vertical menu">
-                <span class="active yellow item">Bookmarks</span>
-                <a class="item" href="https://buienradar.nl/">
-                    Buienradar
-                    <i class="rain icon"></i>
+                <span class="active green item">Unsorted</span>
+                <a class="item" href="https://coronadashboard.rijksoverheid.nl/">
+                    Corona Dashboard
+                    <i class="virus icon"></i>
                 </a>
                 <a class="item" href="https://gmail.com">
                     Gmail
@@ -43,25 +44,13 @@
                     Google Keep
                     <i class="google icon"></i>
                 </a>
-                <a class="item" href="https://imdb.com">
-                    iMDB
-                    <i class="imdb icon"></i>
-                </a>
-                <a class="item" href="https://nos.nl/">
-                    NOS
-                    <i class="newspaper icon"></i>
-                </a>
-                <a class="item" href="https://nu.nl">
-                    NU.nl
-                    <i class="newspaper icon"></i>
+                <a class="item" href="https://maps.google.com">
+                    Google Maps
+                    <i class="map marked alternate icon"></i>
                 </a>
                 <a class="item" href="https://www.reddit.com/">
                     Reddit
-                    <i class="reddit icon"></i>
-                </a>
-                <a class="item" href="https://www.trello.com">
-                    Trello
-                    <i class="trello icon"></i>
+                    <i class="reddit alien icon"></i>
                 </a>
                 <a class="item" href="https://gathering.tweakers.net">
                     Tweakers GoT
@@ -71,9 +60,9 @@
                     Tweakers.net
                     <i class="glasses icon"></i>
                 </a>
-                <a class="item" href="https://www.weeronline.nl/Europa/Nederland/Emmen/4057159">
-                    WeerOnline
-                    <i class="sun icon"></i>
+                <a class="item" href="https://web.whatsapp.com">
+                    Whatsapp web
+                    <i class="whatsapp icon"></i>
                 </a>
             </div>
         </div>
@@ -96,6 +85,10 @@
                     LastFM
                     <i class="lastfm square icon"></i>
                 </a>
+                <a class="item" href="https://imdb.com">
+                    iMDB
+                    <i class="imdb icon"></i>
+                </a>
                 <a class="item" href="https://www.pogdesign.co.uk/cat/">
                     TV Show guide
                     <i class="tv icon"></i>
@@ -113,10 +106,57 @@
                     <i class="tv icon"></i>
                 </a>
             </div>
+
+            <div class="ui hidden divider"></div>
+
+
         </div>
         <div class="column">
             <div class="ui fluid inverted vertical menu">
-                <span class="active green item">Servers</span>
+                <span class="active blue item">Nieuws & Weer</span>
+                <a class="item" href="https://buienalarm.nl/">
+                    Buienalarm
+                    <i class="rain icon"></i>
+                </a>
+                <a class="item" href="https://buienradar.nl/">
+                    Buienradar
+                    <i class="cloud sun rain icon"></i>
+                </a>
+                <a class="item" href="https://nos.nl/">
+                    NOS
+                    <i class="newspaper outline icon"></i>
+                </a>
+                <a class="item" href="https://nu.nl">
+                    NU.nl
+                    <i class="newspaper icon"></i>
+                </a>
+                <a class="item" href="https://www.weeronline.nl/Europa/Nederland/Emmen/4057159">
+                    WeerOnline
+                    <i class="sun icon"></i>
+                </a>
+            </div>
+
+            <div class="ui hidden divider"></div>
+
+            <div class="ui fluid inverted vertical menu">
+                <span class="active red item">Games</span>
+                <a class="item" href="https://bindingofisaacrebirth.fandom.com">
+                    Binding of Isaac wiki
+                    <i class="sad cry outline icon"></i>
+                </a>
+                <a class="item" href="https://cardgames.io/">
+                    cardgames.io
+                    <i class="dice icon"></i>
+                </a>
+                <a class="item" href="https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad">
+                    SpireSpy
+                    <i class="game icon"></i>
+                </a>
+            </div>
+        </div>
+        <div class="column">
+            <div class="ui fluid inverted vertical menu">
+                <span class="active orange item">Servers</span>
                 <a class="item" href="http://192.168.2.254/">
                     Fritz
                     <i class="wifi icon"></i>
@@ -130,33 +170,30 @@
                     <i class="raspberry pi icon"></i>
                 </a>
             </div>
-        </div>
-        <div class="column">
-            <div class="ui fluid inverted vertical menu" id="tools">
-                <span class="active blue item">Tools</span>
-                <a class="item" href="https://coronadashboard.rijksoverheid.nl/">
-                    Corona Dashboard
-                    <i class="virus icon"></i>
+
+            <div class="ui hidden divider"></div>
+
+            <div class="ui fluid inverted vertical menu">
+                <span class="active yellow item">DevTools</span>
+                <a class="item" href="https://mathew-kurian.github.io/CharacterMap/">
+                    CharacterMap
+                    <i class="font icon"></i>
                 </a>
-                <a class="item" data-tool="deduplicate">
+                <a class="item" href="https://dedupelist.com/">
                     DeDupeList
                     <i class="list icon"></i>
                 </a>
-                <a class="item" data-tool="compare">
-                    ListCompare
-                    <i class="list icon"></i>
+                <a class="item" href="https://github.com">
+                    GitHub
+                    <i class="github icon"></i>
                 </a>
                 <a class="item" href="https://onlinephp.io/">
                     PHP Online
                     <i class="code icon"></i>
                 </a>
-                <a class="item" href="https://maybelatergames.co.uk/tools/slaythespire/tierlist/cards/ironclad">
-                    SpireSpy
-                    <i class="game icon"></i>
-                </a>
-                <a class="item" href="https://web.whatsapp.com">
-                    Whatsapp web
-                    <i class="whatsapp icon"></i>
+                <a class="item" href="https://www.trello.com">
+                    Trello
+                    <i class="trello icon"></i>
                 </a>
             </div>
         </div>
